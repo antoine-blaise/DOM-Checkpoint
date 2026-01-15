@@ -1,0 +1,136 @@
+/* .navbar-brand {
+  color: green !important;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 50px 0;
+}
+.total-price span {
+  font-size: 30px;
+}
+
+.total {
+  font-weight: bold;
+}
+.list-products {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 70%;
+}
+.card {
+  padding: 5%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 25px;
+}
+
+.card-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.fa-trash-alt {
+  color: #de6b5c;
+}
+/* Add these to your existing CSS */
+
+/* Hover effects for buttons */
+.fa-plus-circle:hover {
+    color: #28a745 !important;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.fa-minus-circle:hover {
+    color: #ffc107 !important;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.fa-trash-alt:hover {
+    color: #dc3545 !important;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.fa-heart:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+/* Animation for quantity change */
+.quantity {
+    transition: all 0.3s ease;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Animation for total price */
+.total {
+    transition: all 0.2s ease;
+    color: #28a745;
+}
+
+/* Style for empty cart message */
+.empty-cart-message {
+    text-align: center;
+    padding: 50px;
+    color: #6c757d;
+    font-size: 1.2em;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Disabled state for minus button when quantity is 0 */
+.quantity-zero ~ .fa-minus-circle {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.quantity-zero ~ .fa-minus-circle:hover {
+    color: black !important;
+    transform: scale(1);
+}
